@@ -5,7 +5,7 @@ services:
     ports:
       - "5000:5000"
     volumes:
-      - ./path/to/html/directory:/path/in/container/to/html
+      - ./app/templates:/app/templates/html
     depends_on:
       - db
   db:
